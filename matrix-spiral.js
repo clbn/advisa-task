@@ -19,9 +19,9 @@ var getOneTurn = function(matrix) {
 
   // Do one turn
   for (x = 0; x < xLength; x++) { console.log(matrix[0][x]); }
-  for (y = 1; y < yLength; y++) { console.log(matrix[y][xLength]); }
-  for (x = xLength-2; x >= 0; x--) { console.log(matrix[yLength][x]); }
-  for (y = yLength-2; y >= 1; y--) { console.log(matrix[y][xLength]); }
+  for (y = 1; y < yLength; y++) { console.log(matrix[y][xLength-1]); }
+  for (x = xLength-2; x >= 0; x--) { console.log(matrix[yLength-1][x]); }
+  for (y = yLength-2; y >= 1; y--) { console.log(matrix[y][0]); }
 
   // Do we need to go deeper?
   if (xLength > 2 && yLength > 2) {
